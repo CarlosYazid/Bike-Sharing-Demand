@@ -180,9 +180,9 @@
   
 | model | hpo1 | hpo2 | hpo3 | score |
 | -- | -- | -- | -- | -- |
-| initial | ? | ? | ? | ? |
-| add_features | ? | ? | ? | ? |
-| hpo | ? | ? | ? | ? |
+| initial | default_vals | default_vals | default_vals | 1.80145 |
+| add_features | default_vals | default_vals | default_vals | 0.62399 |
+| hpo | GBM: learning_rate: [1e-3 - 0.1], num_leaves: [31, 64, 128], colsample_bytree: [0.5 - 1.0], subsample: [0.5 - 1.0], lambda_l1:  [0 - 1.0], lambda_l2: [0 - 1.0] | CAT: iterations: [200, 500, 1000], learning_rate: [1e-3 - 0.3], depth: [4, 6, 8, 10] | XGB: max_depth: [4, 6, 8, 10], learning_rate: [1e-3 - 0.2], subsample: [0.5 - 1.0], colsample_bytree: [0.5 - 1.0], n_estimators: [100, 300, 500] | 0.46993 |
 
 **Create a line plot showing the top model score for the three (or more) training runs during the project.**
    Below is the comparison of OOF (RMSE) scores from the three successive training runs:
